@@ -1,0 +1,429 @@
+<!DOCTYPE html lang="en">
+<!-- #region -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Esta es una practica para launchX">
+        <meta name="author" content="sobres3 - NachoSobrevilla">
+        <title>
+            Pasteleria La Moderna
+        </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <!-- Custom CSS -->
+        <!-- <link href="<?php echo base_url(); ?>assets/css/sb-admin.css" rel="stylesheet"> -->
+        <!-- Morris Charts CSS -->
+        <!-- <link href="<?php echo base_url(); ?>assets/css/plugins/morris.css" rel="stylesheet"> -->
+        <!-- Custom Fonts -->
+        <!-- <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body {
+                background-color: #ff66c4;
+            }
+            .bnclr-while{
+                background-color: #ffffff;
+            }
+            .bnclr-black{
+                background-color: #363636;
+            }
+            .bnclr-red{
+                background-color: #ff0000;
+            }
+            .bnclr-green{
+                background-color: #00ff00;
+            }
+            .bnclr-blue{
+                background-color: #0000ff;
+            }
+            .bnclr-yellow{
+                background-color: #ffff00;
+            }
+            .bnclr-orange{
+                background-color: #ffa500;
+            }
+            .bnclr-light-pink{
+                background-color: #f7c4cb;
+            }
+            .bnclr-dark-pink{
+                background-color: #ff00ff;
+            }
+            .bnclr-purple{
+                background-color: #800080;
+            }
+            .bnclr-gray{
+                background-color: #808080;
+            }
+            .bnclr-light-gray{
+                background-color: #d3d3d3;
+            }
+            .bnclr-light-purple{
+                background-color: #cc99ff;
+            }
+            .bnclr-light-brown{
+                background-color: #cc9966;
+            }
+            .bnclr-dark-yellow{
+                background-color: #edbd2d;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="" name="HomeWebPage">
+            <div class="container-fluid text-center">
+                <img src="img/Pasteleria la moderna/Pasteleria la moderna.png" alt="Pasteleria La Moderna" width="155px" height="90px" class="text-center">
+            </div>
+            <div class=""> 
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand active" href="#HomeWebPage"> <img src="img/Pasteleria la moderna/Logo 1 Slide blk .png" alt="Home" width="50px" height="30px" > </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#PastelesPrecio">Pasteles</a>
+                        <a class="nav-item nav-link" href="#Decoraciones">Decorciones</a>
+                        <a class="nav-item nav-link" href="#Sabores">Sabores</a>
+                        <a class="nav-item nav-link" href="#Pedidos">Pedidos</a>
+                        <a class="nav-item nav-link" href="#infopage">Info <span class="sr-only">(current)</span></a>
+                        <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                      </div>
+                    </div>
+                  </nav>
+            </div>  
+        </header>
+        
+        <main class="ml-5 mr-5 bnclr-while">
+            <!--Seccion de bienvenida-->
+            <section name="Bienvenida">
+                <h1 class="text-center">Bienvenido a Pasteleria La Moderna</h1>
+            </section>
+            <!--Seccion de precios-->
+            <section name="PastelesPrecio" class="p-2 m-2">
+                <h2 class="text-center">Nuestros Pasteles</h2>
+                <div class="container-fluid">
+                    <div class="row text-center border border-light m-2 p-2 justify-content-between bg-light">
+                        <div class="col m-2 p-2 border border-0 border  bnclr-light-pink rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/pastel_red.jpeg" alt="Pastel Red Velvet" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1">Pastel Red Velvet</h3>
+                            <span class="p-1">$100.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border  bnclr-light-pink rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/cuadrado chocolate.jpeg" alt="Cuadrado de chocolate" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1">Pastel Cuadrado Chocolate </h3>
+                            <span class="p-1">$100.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border  bnclr-light-pink rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/tarta_cafe.jpg" alt="Tarta de Cafe" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1">Tarta de Cafe </h3>
+                            <span class="p-1">$100.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Seccion de Decoraciones-->
+            <section name="Decoraciones" class="p-2 m-2">
+                <h2 class="text-center">Decoraciones</h2>
+                <div class="container-fluid">
+                    <div class="row text-center border border-light m-2 p-2 justify-content-between bg-light">
+                        <div class="col m-2 p-2 border border-0 border bnclr-light-purple rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/decorado_dulces_chocolates.jpeg" alt="decorado_dulces_chocolates" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1">Chocolates</h3>
+                            <span class="p-1">$300.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-light-purple rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/decorado_flores.jpeg" alt="decorado_flores" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1"> Flores </h3>
+                            <span class="p-1">$200.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-light-purple rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/decorado_frutos_rojos.jpeg" alt="decorado_frutos_rojos" width="200px" height="200px" class="p-1">
+                            <h4 class="m-1"> Frutos Rojos </h3>
+                            <span class="p-1">$150.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Seccion de Sabores-->
+            <section name="Sabores" class="p-2 m-2">
+                <h2 class="text-center">Sabores</h2>
+                <div class="container-fluid">
+                    <div class="row text-center border border-light m-2 p-2 justify-content-between bg-light">
+                        <div class="col m-2 p-2 border border-0 border bnclr-dark-yellow rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/sabor_vainilla.png" alt="sabor_vainilla" width="100px" height="100px" class="p-1">
+                            <h4 class="m-1">Vainilla</h3>
+                            <span class="p-1">$300.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-red rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/sabor_fresa.png" alt="sabor_fresa" width="100px" height="100px" class="p-1">
+                            <h4 class="m-1"> Fresa </h3>
+                            <span class="p-1">$200.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-orange rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/sabor_chocolate.png" alt="sabor_chocolate" width="100px" height="100px" class="p-1">
+                            <h4 class="m-1"> Chocolate </h3>
+                            <span class="p-1">$150.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-light-brown rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/sabor_cafe.png" alt="sabor_cafe" width="100px" height="100px" class="p-1">
+                            <h4 class="m-1"> Cafe </h3>
+                            <span class="p-1">$150.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                        <div class="col m-2 p-2 border border-0 border bnclr-green rounded"> <!--Columnas que contendran los items-->
+                            <img src="img/sabor_menta.png" alt="sabor_menta" width="100px" height="100px" class="p-1">
+                            <h4 class="m-1">Menta</h3>
+                            <span class="p-1">$150.00</span>
+                            <br>
+                            <button class="m-1 btn btn-primary"> Agregar </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Seccion de Pedido-->
+            <section name="Pedidos" class="p-2 m-2">
+                <h2 class="text-center">Pedidos</h2>
+                <div class="container-fluid border border-light m-2 p-2 justify-content-between ">
+                    <div class="row">
+                        <div class="col m-2 border border-primary bnclr-light-gray">
+                            <form action="" method="post">
+                                <label> Tipo de Pastel </label>
+                                <div class="row justify-content-between ml-2 mr-2">
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Red_Velvet" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Red velvet
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Cuadrado_Chocolate" checked>
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            Cuadrado Chocolate
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Tarta_Cafe" checked>
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            Tarta de Cafe
+                                        </label>
+                                    </div>
+
+                                </div>
+                                
+                                <label> Decorado </label>
+                                <div class="row justify-content-between ml-2 mr-2">
+                                    <div class ="form-check ">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="Decorado_Chocolates" >
+                                        <label class="form-check-label" for="exampleRadios4">
+                                            Decorado de Chocolate
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios5" value="Decorado_Flores">
+                                        <label class="form-check-label" for="exampleRadios5">
+                                            Decorado de Flores
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios6" value="Decorado_Frutos_Rojos">
+                                        <label class="form-check-label" for="exampleRadios6">
+                                            Decorado de Frutos Rojos
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <label> Sabor </label>
+                                <div class="row justify-content-between ml-2 mr-2">
+                                    <div class ="form-check ">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios7" value="Vainilla" >
+                                        <label class="form-check-label" for="exampleRadios7">
+                                            Vainilla
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios8" value="Chocolate">
+                                        <label class="form-check-label" for="exampleRadios8">
+                                            Chocolate
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios9" value="Fresa">
+                                        <label class="form-check-label" for="exampleRadios9">
+                                            Fresa
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios10" value="Menta">
+                                        <label class="form-check-label" for="exampleRadios10">
+                                            Menta
+                                        </label>
+                                    </div>
+
+                                    <div class ="form-check">
+                                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios11" value="Cafe">
+                                        <label class="form-check-label" for="exampleRadios11">
+                                            Cafe
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Direccion</label>
+                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comentario">Comentario</label>
+                                    <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                               
+
+                            </form>
+                        </div>
+
+                        <div class="col m-2 justify-content-center text-center">
+                            <img src="img/Pasteleria la moderna/Logo 1 Slide pink .png" alt="slide pink" width="350px" height="250px" >
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+        <footer class="bnclr-black text-center text-white" name="infopage">
+            <div class="card-footer text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Contacto</h3>
+                            <!--<p>
+                                <i class="fa fa-phone"></i>
+                                <span>+57 300-123-4567</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <span> -->
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Facebook.png" alt="Facebook" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-facebook-square">Pasteleria La Moderna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Twitter.png" alt="Instagram" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-twitter-square">@PasteleriaLaModerna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Instagram.png" alt="Instagram" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-instagram">@PasteleriaLaModerna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Whatsapp.png" alt="WhatsApp" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-whatsapp">800 000 0111</i>
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Horarios</h3>
+                            <p>
+                                <i class="fa fa-clock-o"></i>
+                                <span>Lunes a Viernes: 8:00am - 6:00pm</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-clock-o"></i>
+                                <span>Sabados: 8:00am - 2:00pm</span>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Dirección</h3>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Calle 1 # 1-1</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Ciudad de Pasto</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/Pasteleria la moderna/Logo2 Bn.png" alt="Pasteleria La Moderna" width="250px" height="150px" class="text-center">
+            </div>
+        </footer>
+
+    </body>
+
+
+</html>

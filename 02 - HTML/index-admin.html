@@ -1,0 +1,401 @@
+<!DOCTYPE html lang="en">
+<!-- #region -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Esta es una practica para launchX">
+        <meta name="author" content="sobres3 - NachoSobrevilla">
+        <title>
+            Pasteleria La Moderna
+        </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <!-- Custom CSS -->
+        <!-- <link href="<?php echo base_url(); ?>assets/css/sb-admin.css" rel="stylesheet"> -->
+        <!-- Morris Charts CSS -->
+        <!-- <link href="<?php echo base_url(); ?>assets/css/plugins/morris.css" rel="stylesheet"> -->
+        <!-- Custom Fonts -->
+        <!-- <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body {
+                background-color: #ff66c4;
+            }
+            .bnclr-while{
+                background-color: #ffffff;
+            }
+            .bnclr-black{
+                background-color: #363636;
+            }
+            .bnclr-light-gray{
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="" name="HomeWebPage">
+            <div class="container-fluid text-center">
+                <img src="img/Pasteleria la moderna/Pasteleria la moderna.png" alt="Pasteleria La Moderna" width="155px" height="90px" class="text-center">
+            </div>
+            <div class="container-fluid text-center">
+                <h1 class="text-center">Pasteleria La Moderna - Inventario</h1>
+            <div class=""> 
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand active" href="#HomeWebPage"> <img src="img/Pasteleria la moderna/Logo 1 Slide blk .png" alt="Home" width="50px" height="30px" > </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#inventarioDecorados">Decorados</a>
+                        <a class="nav-item nav-link" href="#inventarioSabores">Sabores</a>
+                        <a class="nav-item nav-link" href="#listaPedidos">Pedidos</a>
+                        <a class="nav-item nav-link" href="#infopage">Info <span class="sr-only">(current)</span></a>
+                        <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                      </div>
+                    </div>
+                  </nav>
+            </div>  
+        </header>
+        
+        <main class="bnclr-light-gray">
+            <section name="inventarioDecorados" class=" mr-2 ml-2 p-2 text-center bnclr-light-gray">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center">Inventario de Decorados</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-5">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Comprar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Flores</td>
+                                        <td>$5.00</td>
+                                        <td>15</td>
+                                        <td>
+                                            <a href="" class="btn btn-warning">Mercado Libre</a>
+                                            <a href="" class="btn btn-warning">Amazon</a>
+                                            <a href="" class="btn btn-warning">Otros</a>
+                                            <a href="" class="btn btn-danger">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Chocholates(Dulce)</td>
+                                        <td>$50.00</td>
+                                        <td>140</td>
+                                        <td>
+                                            <a href="" class="btn btn-warning">Mercado Libre</a>
+                                            <a href="" class="btn btn-warning">Amazon</a>
+                                            <a href="" class="btn btn-warning">Otros</a>
+                                            <a href="" class="btn btn-danger">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Frutos Rojos</td>
+                                        <td>$150.00</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="" class="btn btn-warning">Mercado Libre</a>
+                                            <a href="" class="btn btn-warning">Amazon</a>
+                                            <a href="" class="btn btn-warning">Otros</a>
+                                            <a href="" class="btn btn-danger">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section name="inventarioSabores" class="mr-2 ml-2 p-2 text-center bnclr-light-gray">
+                <div class="container-fluid ">
+                    <div class="row">  
+                        <div class="col-12">
+                            <h2 class="text-center">Inventario de Sabores</h2>
+                        </div> 
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-12 p-5">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Comprar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Chocolate</td>
+                                            <td>$5.00</td>
+                                            <td>250</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Mercado Libre</a>
+                                                <a href="" class="btn btn-warning">Amazon</a>
+                                                <a href="" class="btn btn-warning">Otros</a>
+                                                <a href="" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Fresa</td>
+                                            <td>$7.00</td>
+                                            <td>10</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Mercado Libre</a>
+                                                <a href="" class="btn btn-warning">Amazon</a>
+                                                <a href="" class="btn btn-warning">Otros</a>
+                                                <a href="" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Vainilla</td>
+                                            <td>$200.00</td>
+                                            <td>100</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Mercado Libre</a>
+                                                <a href="" class="btn btn-warning">Amazon</a>
+                                                <a href="" class="btn btn-warning">Otros</a>
+                                                <a href="" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Cafe</td>
+                                            <td>$50.00</td>
+                                            <td>70</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Mercado Libre</a>
+                                                <a href="" class="btn btn-warning">Amazon</a>
+                                                <a href="" class="btn btn-warning">Otros</a>
+                                                <a href="" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Menta</td>
+                                            <td>$10.00</td>
+                                            <td>1000</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Mercado Libre</a>
+                                                <a href="" class="btn btn-warning">Amazon</a>
+                                                <a href="" class="btn btn-warning">Otros</a>
+                                                <a href="" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+            </section>
+            <section name="listaPedidos" class=" mr-2 ml-2 p-2 text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center">Pedidos</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-sm  table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Tipo de Pastel</th>
+                                        <th scope="col">Decorado</th>
+                                        <th scope="col">Sabor</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Apellido</th>
+                                        <th scope="col">Telefono</th>
+                                        <th scope="col">Direccion</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Comentario</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Hora</th>
+                                        <th scope="col">Estatus</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Cuadrado Chocolate</td>
+                                        <td>Frutos rojos</td>
+                                        <td>Chocolate, Fresa</td>
+                                        <td>Juan</td>
+                                        <td>Perez</td>
+                                        <td>12345678</td>
+                                        <td>Calle falsa 123</td>
+                                        <td>mail1@mail.com</td>
+                                        <td>*Sin comentario*</td>
+                                        <td>12/3/2022</td>
+                                        <td>12:00</td>
+                                        <td>En proceso</td>
+                                        <td>
+                                            <a href="" class="btn btn-success">Editar</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Red Velvet</td>
+                                        <td>Flores, Chocholates</td>
+                                        <td>Vainilla, Menta</td>
+                                        <td>Pedro</td>
+                                        <td>Ramirez</td>
+                                        <td>12345678</td>
+                                        <td>Colonia Falsa 34</td>
+                                        <td>mail40@mail.mx.com</td>
+                                        <td>*Sin comentario*</td>
+                                        <td>12/3/2022</td>
+                                        <td>1:00</td>
+                                        <td>Para preparar</td>
+                                        <td>
+                                            <a href="" class="btn btn-success">Editar</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Tarta de cafe</td>
+                                        <td>Chocolates</td>
+                                        <td>Cafe</td>
+                                        <td>Maria</td>
+                                        <td>Ramirez</td>
+                                        <td>098765432</td>
+                                        <td>Calle Falsa 34</td>
+                                        <td>mail_maria@mail.mx.com</td>
+                                        <td>*Sin comentario*</td>
+                                        <td>10/3/2022</td>
+                                        <td>1:00</td>
+                                        <td>Listo</td>
+                                        <td>
+                                            <a href="" class="btn btn-success">Editar</a>
+                                        </td>
+                                    </tr>
+
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+        <footer class="bnclr-black text-center text-white" name="infopage">
+            <div class="card-footer text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Contacto</h3>
+                            <!--<p>
+                                <i class="fa fa-phone"></i>
+                                <span>+57 300-123-4567</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <span> -->
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Facebook.png" alt="Facebook" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-facebook-square">Pasteleria La Moderna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Twitter.png" alt="Instagram" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-twitter-square">@PasteleriaLaModerna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Instagram.png" alt="Instagram" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-instagram">@PasteleriaLaModerna</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <a href="#" class="text-white">
+                                        <img src="img/Whatsapp.png" alt="WhatsApp" width="30px" height="30px" class="text-center">
+                                        <i class="fa fa-whatsapp">800 000 0111</i>
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Horarios</h3>
+                            <p>
+                                <i class="fa fa-clock-o"></i>
+                                <span>Lunes a Viernes: 8:00am - 6:00pm</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-clock-o"></i>
+                                <span>Sabados: 8:00am - 2:00pm</span>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Dirección</h3>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Calle 1 # 1-1</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Ciudad de Pasto</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/Pasteleria la moderna/Logo2 Bn.png" alt="Pasteleria La Moderna" width="250px" height="150px" class="text-center">
+            </div>
+        </footer>
+
+    </body>
+
+
+</html>
