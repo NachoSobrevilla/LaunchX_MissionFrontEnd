@@ -56,36 +56,38 @@ body{
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 /*Posicicionamiento*/
-.atras{
+/* .atras{
     z-index: 3;
     position: absolute;
-}
+} */
 .frente{
-    z-index: 3;
+    z-index: 4;
     position: absolute;
 }
 
 .atras_general{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top:0px;
     width: 100%;
 }
 
-.atras_general-2{
+/* .atras_general-2{
     z-index: 0;
     position: absolute;
-}
+} */
 
 .frente_general{
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     width: 100%;
 }
 
-.frente-4{
-    z-index: 4;
-    position: absolute;
+.atras-footer{
+    z-index: 999999;
+    position: initial;
+    bottom: 0px;
+
 }
 
 .caja_info{
@@ -104,6 +106,12 @@ body{
     border-radius: 10px;
     /* bottom: 70px; */
 }
+.caja_min_info_2{
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: 0px 0px 10px rgba(145, 145, 145, 0.507);
+    border-radius: 1px;
+    /* bottom: 70px; */
+}
 
 /*filtro de imagen*/
 .img-filter-gray{
@@ -119,13 +127,22 @@ body{
 .seg-color-blue-general{ color: #445ffa; }
 .min-box-bg-color{ background-color: #d1d8ff; }
 
-.pos-0-left{
-    top: 0px;
-    left: 0px;
+.pos-10-right{
+    right: 10rem;
     /* background-position: 0% 0%; */
 }
-.pos-0-right{
-    top: 0px;
-    right: 0px;
+
+.pos-10-left{
+    left: 10rem;
+    /* background-position: 0% 0%; */
+}
+
+.pos-0-botton{
+    bottom: 0px;
     /* background-position: 100% 0%; */
+}
+
+.tamaño-fondo{
+    width: 10rem;
+    height: 15rem;
 }
