@@ -1,0 +1,61 @@
+.bkg-color-red{
+    background-color: rgb(248, 35, 35);
+    background-size: cover;
+}
+
+.bkg-color-white{
+    background-color: rgb(255, 255, 255);
+}
+
+.bkg-color-gray{
+    background-color: rgb(80, 80, 80);
+}
+
+.bkg-color-gray-light{
+    background-color: rgb(175, 175, 175);
+}
+
+.img-filter-bw{
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+.material-icons.md-10 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+/* Colores para iconos*/
+.material-icons.color-yellow { color: #ffeb3b; }
+.material-icons.color-gold{ color: #ffd700; }
+.material-icons.color-red{ color: #f44336; }
+.material-icons.color-blue{ color: #2196f3; }
+.material-icons.color-green{ color: #4caf50; }
+.material-icons.color-blue-general{ color: #445ffa; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+/*Posicicionamiento*/
+
+
+
+.font-title{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 10rem;
+}
+
+.font-start20{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+}
+
+.font-ChakraPetch{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-size-20{
+    font-size: 2rem;
+}
