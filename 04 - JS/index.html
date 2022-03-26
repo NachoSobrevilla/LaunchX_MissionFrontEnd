@@ -59,7 +59,7 @@
                                 </th>
                                 <td>
                                     <p id="pokeHP" class="font-weight-bold text">0</p>
-                                    <p id="pokeHPEsF" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeHPEsF" class="font-weight-bold text"> </p> -->
                                 </td>
                                 <th>
                                     <span class="material-icons md-18 mx-2">
@@ -69,7 +69,7 @@
                                 </th>
                                 <td>
                                     <p id="pokeAttack" class="font-weight-bold text">0</p>
-                                    <p id="pokeAttackEsF" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeAttackEsF" class="font-weight-bold text"> </p> -->
         
                                 </td>
                             </tr>
@@ -82,7 +82,7 @@
                                 </th>
                                 <th>
                                     <p id="pokeDefense" class="font-weight-bold text">0</p>
-                                    <p id="pokeDefenseEsf" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeDefenseEsf" class="font-weight-bold text"> </p> -->
         
                                 </td>
                                 <th>
@@ -93,7 +93,7 @@
                                 </th>
                                 <td>
                                     <p id="pokeSpeed" class="font-weight-bold text">0</p>
-                                    <p id="pokeSpeedEsf" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeSpeedEsf" class="font-weight-bold text"> </p> -->
         
                                 </td>
                             </tr>
@@ -106,7 +106,7 @@
                                 </th>
                                 <td>
                                     <p id="pokeAttackSpec" class="font-weight-bold text">0</p>
-                                    <p id="pokeAttackSpecEsf" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeAttackSpecEsf" class="font-weight-bold text"> </p> -->
                                 </td>
                                 <th>
                                     <span class="material-icons md-18 mx-2">
@@ -116,7 +116,7 @@
                                 </th>
                                 <td>
                                     <p id="pokeDefenseSpec" class="font-weight-bold text">0</p>
-                                    <p id="pokeDefenseSpecEsf" class="font-weight-bold text"> </p>
+                                    <!-- <p id="pokeDefenseSpecEsf" class="font-weight-bold text"> </p> -->
                                 </td>
                             </tr>
                         </table>
@@ -146,7 +146,7 @@
         </section>
 
 
-        <section class="justify-content-center">
+        <section class="justify-content-center my-2">
             <h2 class="text-center font-ChakraPetch">Busca el tipo del pokemon</h2>
             <div class="col align-items-center text-center ">
                 <div class="row m-3 justify-content-center align-items-center">
@@ -166,8 +166,24 @@
         </section>
         
 
-        <section>
-
+        <section class="justify-content-center my-2">
+            <h2 class="text-center font-ChakraPetch">Más pokemones</h2>
+            <div class="col align-items-center text-center my-1">
+                <div class="row m-3 justify-content-center align-items-center">
+                    <span class="material-icons md-36 mx-2">
+                        search
+                    </span>
+                    <label for="NumPokemonesInput">¿Cuántos pokemones necesitar ver?:</label>  
+                    <input class="mx-2" type="number" placeholder="100" id="NumPokemonesInput" name="NumPokemonesInput">
+                    <label for="IDInitPokemonesInput">¿A partir de que ID?: </label>
+                    <input class="mx-2" type="number" placeholder="200" id="IDInitPokemonesInput" name="IDInitPokemonesInput">
+                    <button class="btn btn-primary " onclick="fetchNumPokemons()">Buscar Pokemones</button>
+                    
+                </div>            
+            </div>
+            <div id="divNumPokemones" class="col align-items-center text-center border border-light rounded p-3">
+            
+            </div>
         </section>
     </main>
     <footer class="card card-footer bg-dark">

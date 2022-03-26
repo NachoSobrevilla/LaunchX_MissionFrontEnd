@@ -24,32 +24,7 @@ const fetchPokemon = () => {
     }).then((data) => { //esto tambien es una promesa, no como las de tu crush
         //Si la data no esta vacia, entonces mandamos la info del pokemon
         if (data){
-            const pokeLabel = document.getElementById("pokeLabel");
-            const pokeId = document.getElementById("pokeID")
-            const pokeName2 = document.getElementById("pokeName2")
-            const pokeHeight  = document.getElementById("pokeHeight")
-            const pokeWeight  = document.getElementById("pokeWeight") 
-            const pokeSpecies  = document.getElementById("pokeSpecies")
-            const pokeExpBase  = document.getElementById("pokeExpBase") 
-            
-            console.log(data);
-            let pokeImg = data.sprites.front_default;
-            pokeLabel.innerHTML = data.name;
-            pokeId.innerHTML = data.id;
-            pokeName2.innerHTML = data.name;
-            pokeHeight.innerHTML = data.height;
-            pokeWeight.innerHTML = data.weight;
-            pokeSpecies.innerHTML = data.species.name;
-            pokeExpBase.innerHTML = data.base_experience;
-
-            console.log(pokeImg);
-            pokeImage(pokeImg);
-            console.log(data.stats);
-            pokeStats(data.stats);
-
-            pokeAbilities(data.abilities);
-            pokeTypes(data.types);
-            
+            mostrarPokemon(data);  
         }
     });
 }
@@ -137,4 +112,84 @@ const fetchAbilities = () => {
 
 
     });
+}
+
+fetchOnlyPokemon = (pokemon) => {
+    console.log(pokemon);
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+    fetch(url).then((res) => {
+        if(res.status != "200"){
+            console.log(res);
+            alert("Pokemon no encontrado :'(");
+        }
+        else{
+            return res.json();
+        }
+    }).then((data) => {
+        mostrarPokemon(data);
+    });
+}
+
+
+fetchNumPokemons = () => {
+    const pokeNumPokemones = document.getElementById("NumPokemonesInput");
+    let NumPokes = pokeNumPokemones.value;
+    const idPokemonsInit = document.getElementById("IDInitPokemonesInput");
+    let idPokeInit = idPokemonsInit.value;
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=${NumPokes}&offset=${idPokeInit}`;
+    contenedorPokemones = document.getElementById("divNumPokemones")
+    fetch(url).then((res) => {
+        if(res.status != "200"){
+            console.log(res);
+            alert("Error al obtener los pokemones :'(");
+            contenedorPokemones.innerHTML = "";
+        }
+        else{
+            return res.json();
+        }
+    }) .then((data) => {
+        listpokemons = data.results
+        
+        for(i=0;i<listpokemons.length;i++){
+            let btnPokemon = document.createElement("button");
+            let pokeitem = listpokemons[i].name;
+            btnPokemon.className = "btn btn-primary m-1";
+            btnPokemon.innerHTML = pokeitem;
+            btnPokemon.onclick = function () {
+                console.log("click: " + pokeitem);
+                fetchOnlyPokemon(pokeitem.toLowerCase());
+            }  
+            contenedorPokemones.appendChild(btnPokemon);
+        }
+    });
+}
+
+
+
+function mostrarPokemon(data){
+    const pokeLabel = document.getElementById("pokeLabel");
+    const pokeId = document.getElementById("pokeID")
+    const pokeName2 = document.getElementById("pokeName2")
+    const pokeHeight  = document.getElementById("pokeHeight")
+    const pokeWeight  = document.getElementById("pokeWeight") 
+    const pokeSpecies  = document.getElementById("pokeSpecies")
+    const pokeExpBase  = document.getElementById("pokeExpBase") 
+    
+    console.log(data);
+    let pokeImg = data.sprites.front_default;
+    pokeLabel.innerHTML = data.name;
+    pokeId.innerHTML = data.id;
+    pokeName2.innerHTML = data.name;
+    pokeHeight.innerHTML = data.height;
+    pokeWeight.innerHTML = data.weight;
+    pokeSpecies.innerHTML = data.species.name;
+    pokeExpBase.innerHTML = data.base_experience;
+
+    console.log(pokeImg);
+    pokeImage(pokeImg);
+    console.log(data.stats);
+    pokeStats(data.stats);
+
+    pokeAbilities(data.abilities);
+    pokeTypes(data.types);
 }
